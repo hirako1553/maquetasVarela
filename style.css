@@ -5,34 +5,61 @@
 }
 
 body{
-  background-color: green;
+  background-color: lightgreen;
   font-size: large;
   font-family: 'Pacifico', cursive;
-
+}
+#paneluno{
   
     display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   
 }
-
+#panelDos{
+  
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  
+  
+}
 header{
   background-color: red;
   font family: "Snippet", sans-serif;
-  
   grid-column: 1/-1;
+  text-align: center;
 }
 
 footer{
-  background-color: blue;
+  background-color: lightblue;
+  font family: "Snippet", sans-serif;
+  grid-column: 2/3;
+  
+  
+  
 }
 section{
   background-color: yellow;
+    grid-column: 2/-1;
 }
 article{
   background-color: pink;
+
 }
 nav{
   background-color: grey;
 }
+@media only screen and (max-width: 600px) {
+  body{
+    background-color: red;
+  }
+div{
+  max-width: 500px;
+  height: 100 px;
+  border: 3px solid;
+  panelDos;
+  }
+} 
